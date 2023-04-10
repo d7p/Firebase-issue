@@ -1,0 +1,28 @@
+{
+  "name": "firebase-reuse-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "firebase": "^9.19.1"
+  },
+  "exports": {
+    "./index": "./build/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      ".index": [
+        "./build/index..d.ts"
+      ]
+    }
+  }
+}
